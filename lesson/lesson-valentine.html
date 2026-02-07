@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Lesson Valentine</title>
+
+  <!-- RELATIVE PATHS ARE CRITICAL -->
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/lesson-valentine.css" />
+</head>
+
+<body>
+
+<main class="lesson">
+
+  <h1>Lesson Valentine</h1>
+
+  <p class="subtitle">
+     You have successfully completed the crash course<br />
+     You aren't as lousy as I thought you were :D
+  </p>
+
+  <div class="lesson-card">
+    <img
+      src="../assets/lessons/lesson-valentine.png"
+      alt="Lesson valentine"
+    />
+  </div>
+
+<button id="unlockBtn" class="primary">
+Love, Always and Forever!
+</button>
+<button id="homeBtn" class="primary">Go home</button>
+<script>
+document.getElementById("unlockBtn").addEventListener("click", () => {
+  localStorage.setItem("unlockedDay", "8");
+  window.location.href = "../hub.html";
+});
+</script>
+
+</main>
+
+<script src="../js/lesson-valentine.js"></script>
+
+
+</body>
+</html>

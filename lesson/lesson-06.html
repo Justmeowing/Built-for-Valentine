@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Lesson 06</title>
+
+  <!-- RELATIVE PATHS ARE CRITICAL -->
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/lesson-06.css" />
+</head>
+
+<body>
+
+<main class="lesson">
+
+  <h1>Lesson 06</h1>
+
+  <p class="subtitle">
+    For the real ones,<br />
+    you know where to find me!
+  </p>
+
+  <div class="lesson-card">
+    <img
+      src="../assets/lessons/lesson-606.png"
+      alt="Lesson 606"
+    />
+  </div>
+
+<button id="unlockBtn" class="primary">
+  Your lesson 07 is unlocked ♥️
+</button>
+
+<script>
+document.getElementById("unlockBtn").addEventListener("click", () => {
+  localStorage.setItem("unlockedDay", "7");
+  window.location.href = "../hub.html";
+});
+</script>
+
+</main>
+
+<script src="../js/lesson-06.js"></script>
+</body>
+</html>
