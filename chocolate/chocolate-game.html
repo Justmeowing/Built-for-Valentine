@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+
+  <title>Chocolate Day</title>
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/chocolate-game.css">
+</head>
+<body>
+
+<main class="choco-scene">
+
+  <h1>Catch the chocolates.</h1>
+  <p class="subtitle">30 seconds. Don’t drop them.</p>
+
+  <!-- GAME AREA -->
+  <div id="gameArea" class="game-area">
+    <div id="basket"></div>
+  </div>
+
+  <!-- HUD -->
+  <div class="hud">
+    <span id="score">0</span> 🍫
+    <span id="timer">30s</span>
+  </div>
+
+  <!-- WIN -->
+  <div id="winState" class="win hidden">
+    <img
+      src="../assets/expressions/girl-happy.png"
+      class="girl"
+      alt="girl happy"
+    />
+    <div class="bubble">
+      Not bad.<br>
+      You caught most of it 😌
+    </div>
+    <button id="nextBtn" class="primary">
+      Here you go! →
+    </button>
+  </div>
+
+</main>
+
+<script src="../js/chocolate-game.js"></script>
+</body>
+</html>
