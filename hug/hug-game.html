@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+
+  <title>Hug Day</title>
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/hug-game.css">
+</head>
+<body>
+
+<main class="hug-scene">
+
+  <h1>Protect the bear.</h1>
+  <p class="subtitle">Swipe to keep him safe.</p>
+
+  <!-- GAME AREA -->
+  <div id="gameArea" class="game-area">
+    <img
+      id="teddy"
+      src="../assets/expressions/teddy.png"
+      alt="teddy"
+    />
+  </div>
+
+  <!-- WIN STATE -->
+  <div id="winState" class="win hidden">
+    <img
+      src="../assets/expressions/girl-happy.png"
+      class="girl"
+      alt="girl happy"
+    />
+
+    <div class="bubble">
+      You didn’t let anything hurt him.<br>
+      That counts♥️
+    </div>
+
+    <button id="nextBtn" class="primary">
+      Make those hugs special!
+    </button>
+  </div>
+
+</main>
+
+<script src="../js/hug-game.js"></script>
+</body>
+</html>
