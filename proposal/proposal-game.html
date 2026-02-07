@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Propose Day</title>
+
+  <link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/proposal-game.css">
+</head>
+
+
+<main class="proposal-scene">
+
+  <div id="gameArea" class="game-wrap">
+
+    <h1>Say it.</h1>
+    <p class="subtitle">You don’t get hints forever.</p>
+
+    <!-- WORD SLOTS -->
+    <div class="words">
+      <div class="word" id="line1"></div>
+      <div class="word" id="line2"></div>
+    </div>
+
+    <!-- LETTER BUTTONS -->
+    <div id="letters" class="letters"></div>
+
+    <!-- HINT -->
+    <button id="hintBtn" class="hint-btn">Use a hint</button>
+    <div id="hints" class="hints">Hints left: 5</div>
+
+    <!-- CHARACTER -->
+    <div class="character">
+      <img src="../assets/expressions/girl-smug.png" class="girl" alt="girl" />
+      <div id="bubble" class="bubble hidden"></div>
+    </div>
+
+  </div>
+
+</main>
+
+<script src="../js/proposal-game.js"></script>
+</body>
+</html>
