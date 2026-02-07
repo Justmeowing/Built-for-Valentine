@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     5: "promise/promise-card.html",
     6: "hug/hug-card.html",
     7: "kiss/kiss-card.html",
-    8: "valentine/valentine-game.html"
+    8: "valentine/valentine-card.html"
   };
 
   /* ---------- NORMAL ENVELOPES (1–7) ---------- */
