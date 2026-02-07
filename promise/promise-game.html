@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+
+  <title>Promise Day</title>
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/promise-game.css">
+</head>
+<body>
+
+<main class="promise-scene">
+
+  <h1>Score 5 goals.</h1>
+  <p class="subtitle">Timing is everything.</p>
+
+  <!-- GAME BOARD -->
+  <div id="gameArea" class="game-area">
+<div id="message" class="message"></div>
+
+    <!-- Goal Post -->
+    <div id="goal"></div>
+
+    <!-- Ball -->
+    <div id="ball"></div>
+
+  </div>
+
+  <!-- HUD -->
+  <div class="hud">
+    <span id="score">0</span> ⚽
+    <span id="timer">30s</span>
+  </div>
+
+  <!-- WIN -->
+  <div id="winState" class="win hidden">
+    <img
+      src="../assets/expressions/girl-happy.png"
+      class="girl"
+      alt="girl happy"
+    />
+    <div class="bubble">
+      Of course you scored.
+    </div>
+    <button id="nextBtn" class="primary">
+      Here is a promise and a some tips →
+    </button>
+  </div>
+
+</main>
+
+<script src="../js/promise-game.js"></script>
+</body>
+</html>
