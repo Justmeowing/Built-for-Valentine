@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kiss Day</title>
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/kiss-game.css">
+</head>
+
+<body>
+<main class="kiss-scene">
+
+  <h1>Collect the hearts.</h1>
+  <p class="subtitle">Don’t miss.</p>
+  <p class="goal">Goal: <strong>12</strong> hearts ❤️</p>
+
+  <div id="arena"></div>
+
+  <div class="hud">
+    <div id="score">Hearts: 0</div>
+    <div id="timer">Time: 30s</div>
+  </div>
+
+  <!-- WIN STATE -->
+  <div id="winState" class="hidden">
+    <img src="../assets/expressions/girl-happy.png" class="girl">
+    <h2>Okay… smooth.</h2>
+    <p>You kept up.</p>
+    <button id="nextBtn" class="primary">Unlock Lesson</button>
+  </div>
+
+</main>
+
+<script src="../js/kiss-game.js"></script>
+</body>
+</html>
