@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Teddy Day</title>
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/teddy-win.css">
+</head>
+<body>
+
+<main class="win-scene">
+
+  <img
+    src="../assets/expressions/girl-happy.png"
+    alt="girl happy"
+    class="girl"
+  />
+
+  <div class="bubble">
+ 
+You reached him<br/>
+    He’s safe because of you 🧸
+  </div>
+
+  <button id="nextBtn" class="primary">
+    Now, go make your girl's day special!
+  </button>
+
+</main>
+
+<script>
+  document.getElementById("nextBtn").addEventListener("click", () => {
+    window.location.href = "../lesson/lesson-04.html";
+  });
+</script>
+
+</body>
+</html>
