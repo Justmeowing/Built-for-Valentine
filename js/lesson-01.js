@@ -1,14 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Guard: must finish rose game
-  if (localStorage.getItem("roseGameCompleted") !== "true") {
-    window.location.href = "../hub.html";
-    return;
-  }
+  const nextBtn = document.getElementById("nextBtn");
 
-  const unlockBtn = document.getElementById("unlockNext");
+  if (!nextBtn) return;
 
-  unlockBtn.addEventListener("click", () => {
-    localStorage.setItem("lesson1Completed", "true");
+  nextBtn.addEventListener("click", () => {
+    // Mark Lesson 01 as completed / unlock Day 2
+    localStorage.setItem("unlockedDay", "2");
+
+    // Go back to hub
     window.location.href = "../hub.html";
   });
 });
