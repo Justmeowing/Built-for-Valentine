@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A very simple guide</title>
+
+  <!-- Global styles -->
+  <link rel="stylesheet" href="css/base.css">
+  <!-- Door page styles -->
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class="scene">
+
+    <!-- CLICKABLE DOOR -->
+    <div id="doorWrapper" class="door-wrapper">
+      <img
+        id="door"
+        src="assets/door/door-knock.gif"
+        class="door-gif"
+        alt="door"
+      />
+    </div>
+
+    <!-- UI LAYER -->
+    <div class="ui-layer">
+
+      <div id="dialogue" class="dialogue hidden"></div>
+
+      <div id="buttons" class="buttons hidden">
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+      </div>
+
+      <button id="readyBtn" class="ready hidden">
+        Ready?
+      </button>
+
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
