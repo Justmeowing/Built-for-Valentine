@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rose Day</title>
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/rose-game.css">
+</head>
+<body>
+
+  <main class="game">
+
+    <h1>Rose Day</h1>
+    <p class="subtitle">Match the roses. Slowly.</p>
+
+    <!-- GAME GRID -->
+    <div id="cardGrid" class="grid"></div>
+
+    <!-- WIN STATE -->
+    <div id="winState" class="win hidden">
+
+      <!-- GIRL (EXPLICIT, NOT JS) -->
+      <img
+        src="../assets/expressions/girl-smug.png"
+        class="girl"
+        alt="girl smug"
+      />
+
+      <div class="bubble">
+        Not bad. You’re good at this.
+      </div>
+
+      <button id="nextBtn" class="primary">
+        Here’s your Lesson 01 🌹
+      </button>
+
+    </div>
+
+  </main>
+
+  <script src="../js/rose-game.js"></script>
+</body>
+</html>
