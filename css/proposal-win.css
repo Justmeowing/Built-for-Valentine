@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* css → ../assets */
+  background-image: url("../assets/textures/paper.png");
+  background-repeat: repeat;
+  background-size: 420px auto;
+}
+
+.win-scene {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.girl {
+  width: 280px;
+  max-width: 80vw;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.text p {
+  font-size: 15px;
+  opacity: 0.85;
+  margin: 6px 0;
+}
+
+.sub {
+  margin-top: 10px;
+}
+
+.primary {
+  margin-top: 10px;
+  background: #f2b705;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primary:active {
+  transform: scale(0.96);
+}

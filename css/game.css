@@ -1,0 +1,28 @@
+body {
+  text-align: center;
+  background: #f6f5f2;
+}
+
+.card-img {
+  width: 260px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.card {
+  width: 60px;
+  height: 80px;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

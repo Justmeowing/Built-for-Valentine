@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* css → ../assets */
+  background-image: url("../assets/textures/paper.png");
+  background-repeat: repeat;
+  background-size: 420px auto;
+}
+.lesson {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 32px 16px 48px;
+  text-align: center;
+}
+
+/* Heading */
+.lesson h1 {
+  margin-bottom: 8px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 32px;
+}
+
+/* Image wrapper */
+.lesson-card {
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.08));
+  background: transparent;
+  border-radius: 20px;
+  padding: 0;
+  margin-top: -50px;
+  margin-bottom: 32px;
+}
+
+/* Lesson image */
+.lesson-card img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
+/* Primary button */
+.primary {
+  background: #f2b705;
+  color: #111;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.primary:active {
+  transform: scale(0.96);
+}
